@@ -1,0 +1,195 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.main {
+    display: flex;
+
+
+}
+.main > .formulario{
+    width: 1100px;
+    height: auto;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+  
+}
+.main > div>img{
+    height: 710px;
+    width: 100%;
+}
+
+.texto-escribir{
+    background-color: #9A9797;
+    border-radius: 10px;
+    display: flex;
+justify-content: center;
+
+}
+
+.contraseña{
+    color: black;
+    background-color: transparent;
+}
+
+
+
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 90%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+.image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-side {
+    background-color: black;
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.form-container {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 50px; /* Espaciado mayor entre el título y los elementos siguientes */
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px; /* Mayor espacio debajo de la línea y el círculo */
+    margin-top: 40px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: white;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+label {
+    display: block;
+    font-size: 1.7rem;
+    margin-bottom: 20px; /* Mayor espacio entre el label y el input */
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #4d4d4d;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px; /* Mayor espacio entre los campos */
+    width: 80%;
+    margin: 0 auto;
+}
+
+.input-container i {
+    color: white;
+    margin-right: 10px;
+}
+
+input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.create-account {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px 20px; /* Aumenté el padding para hacer el botón más grande */
+    text-align: center center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 40px; /* Mayor espacio entre el botón y los campos anteriores */
+    height: 40px;
+    width: 300px;   
+}
+
+.footer {
+    margin-top: 40px; /* Mayor espacio entre el botón y el pie de página */
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+.atras{
+   height: 40px;
+   width: 100px;
+   background-color: #ff0000;
+margin-top: 40px;
+}
