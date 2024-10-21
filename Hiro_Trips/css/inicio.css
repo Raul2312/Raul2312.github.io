@@ -15,6 +15,10 @@
     color: aliceblue;
   
 }
+.main > div{
+    width: 712px;
+    height: 100%;
+}
 .main > div>img{
     height: 100%;
     width: 100%;
