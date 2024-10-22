@@ -286,7 +286,7 @@ section.cuarta > .paquetes {
     background-color: #6B6ECC;
     border-radius: 10px;
     background-image: url(./imgcss/paquete2.webp);
-transition: 500ms ease-in-out all;
+
   }
   .card2 {
     display: flex;
@@ -303,7 +303,7 @@ transition: 500ms ease-in-out all;
     background-color: #6B6ECC;
     border-radius: 10px;
     background-image: url(./imgcss/trio2.webp   );
-transition: 500ms ease-in-out all;
+
   }
   .card3 {
     display: flex;
@@ -320,7 +320,7 @@ transition: 500ms ease-in-out all;
     background-color: #6B6ECC;
     border-radius: 10px;
     background-image: url(./imgcss/parejapaquete4.webp);
-transition: 500ms ease-in-out all;
+
   }
   
   .content {
