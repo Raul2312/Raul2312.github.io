@@ -228,6 +228,11 @@ section.cuarta > .paquetes {
     height: 500px;
 }
 
+#mainer > .fondoAbajo{
+  margin-top: 100px;
+  height: 550px;
+  width: 100%;
+}
 
 /*tarjetas  */
 .fa-user{
