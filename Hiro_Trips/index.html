@@ -24,15 +24,15 @@
 
     <header>
         <div>
-            <div id="logo"><img src="./img/logoletra.webp" alt="">
+            <div id="logo"><img src="./img/logoletra.webp" alt="Logo">
             </div>
         </div>
         <nav>
             <ul>
-                <li><a href="#" class="activado">Inicio</a></li>
-                <li><a href="#titulos">Acerca</a></li>
-                <li><a href="#viajes">Viajes</a></li>
-                <li><a href="#footer">Contacto</a></li>
+                <li><a href="index.html" class="activado" aria-label="Inicio">Inicio</a></li>
+                <li><a href="#titulos" aria-label="Acerca">Acerca</a></li>
+                <li><a href="#viajes" aria-label="Viajes">Viajes</a></li>
+                <li><a href="#footer" aria-label="Contacto">Contacto</a></li>
                 <li>
                     <div class="buscar-container">
                         <input checked="" class="checkbox" type="checkbox">
@@ -62,7 +62,7 @@
     
     <section class="main">
         <video autoplay muted loop id="background-video">
-            <source src="./img/videofondo.mp4" type="video/mp4">
+            <source src="./img/videofondo.mp4" type="video/mp4" aria-label="Video">
             Tu navegador no soporta la etiqueta de video.
         </video>
         <div class="main-text">
@@ -70,8 +70,8 @@
             <h5>La mejor experiencia de viajes
                 alrededor del planeta </h3>
                 <div class="botonesprincipal">
-                    <button class="iniciosesion" onclick="location.href='inicio.html'">Inicio de Sesion</button>
-                    <button class="registro" onclick="location.href='registro.html'">Registrarse</button>
+                    <button class="iniciosesion" onclick="location.href='inicio.html'" aria-label="Inicio">Inicio de Sesion</button>
+                    <button class="registro" onclick="location.href='registro.html'" aria-label="Registro">Registrarse</button>
                 </div>
         </div>
     </section>
