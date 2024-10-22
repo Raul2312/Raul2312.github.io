@@ -111,8 +111,7 @@ header> div> div > #title > h2 {
         text-align: center;
         background-color: #06060600;
         font-size: 3.0rem;
-        z-index: 2;
- 
+       
     }
     .botonesprincipal {
         justify-content: space-between;
