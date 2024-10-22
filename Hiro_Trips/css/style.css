@@ -9,6 +9,14 @@ body{
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -111,7 +119,8 @@ header> div> div > #title > h2 {
         text-align: center;
         background-color: #06060600;
         font-size: 3.0rem;
-       
+        z-index: 2;
+ 
     }
     .botonesprincipal {
         justify-content: space-between;
@@ -367,6 +376,13 @@ section.cuarta > .paquetes {
   }
 
 
+  body >img{
+    margin-top: 100px;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    z-index: 1;
+  }
 
 
   .paquetes-container {
@@ -386,7 +402,7 @@ section.cuarta > .paquetes {
 .image-side img {
     width: 100%;
     height: 100%;
-    
+     z-index: 2;
 }
 
 .package-side {
@@ -598,8 +614,8 @@ color: white;
 .footer > div > img {
   margin-left: 50px;
   margin-top: 150px;
-width: 90%;
-height: 50%;
+width: 150px;
+height: 150px;
 }
 .fa-check{
   font-size: 4rem;
