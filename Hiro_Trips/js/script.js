@@ -26,11 +26,11 @@ const ctx = document.getElementById('chartIngresos');
   new Chart(ctx2, {
     type: 'pie',
     data: {
-      labels: ['Desayuno', 'Comida', 'Cenas', 'Snacks'
+      labels: ['Londres', 'Usa', 'Brasil', 'holanda'
          ],
       datasets: [{
-        label: 'Dietas popr categoria',
-        data: [30, 23, 32, 14, ],
+        label: 'Ganancias Por Destino ',
+        data: [30000, 23101, 29000, 14890, ],
         borderWidth: 1
       }]
     },

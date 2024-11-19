@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+</head>
+<body class="d-flex">
+    <!--sidebar-->
+    <aside class="d-flex " style="width: 13%;">
+      <div class=" text-black p-3 vh-100% w-100 " style="background-color: #080808;" >
+          <h2 class="h3 text-center text-white">  <img src="./img/LOGOBLANCO.webp " class="card-img-top" alt="..." style="height: 100PX; width: 100PX; " >
+              <br>
+              
+              Hiro Trips</h2>
+          <nav>
+              <ul class="nav flex-column">
+                      <li class="nav-item">
+                          <a href="./admin.html" class="nav-link text-white"><i class="bi bi-house"></i>&nbsp;&nbsp;   Inicio </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./users.html" class="nav-link text-white"><i class="bi bi-person"></i>&nbsp;&nbsp;   Usuarios </a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./comida.html" class="nav-link text-white"><i class="bi bi-egg-fried"></i>&nbsp;&nbsp;   Comida</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./reservaciones.html" class="nav-link text-white"><i class="bi bi-airplane-engines"></i>&nbsp;&nbsp;   Reservaciones</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./pagos.html" class="nav-link text-white"><i class="bi bi-cash"></i>
+                              &nbsp;&nbsp;   Pagos</a>
+                      </li>
+
+                      <li class="nav-item">
+                          <a href="./empleados.html" class="nav-link text-white"><i class="bi bi-person-arms-up"></i>
+
+                              &nbsp;&nbsp;   Empleados</a>    
+                      </li>
+
+                      <li class="nav-item">
+                          <a href="./hospedaje.html" class="nav-link text-white"><i class="bi bi-house-fill"></i>
+
+                              &nbsp;&nbsp;  Hospedaje</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./transporte.html" class="nav-link text-white"><i class="bi bi-bicycle"></i>
+
+                              &nbsp;&nbsp;  Transporte</a>
+                      </li>
+                      <li class="nav-item">
+                          <a href="./paquetes.html" class="nav-link text-white"><i class="bi bi-gift"></i>
+
+                              &nbsp;&nbsp;  Paquete</a>
+                      </li>
+
+
+                      
+                    
+              </ul>
+          </nav>
+      </div>
+  </aside>
+<!--end sidebar-->
+<!--Main content-->
+
+<main class="flex-grow-1 ">
+    <header class="pt-4">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+                <a href="" class="navbar-brand">Pagos</a>
+                
+
+                <div class="collapse navbar-collapse justify-content-end">
+
+                    <ul class="navbar-nav">
+
+                        <li class="navbar-item mx-3">
+                            <button type="button" class="btn btn-light position-relative pt-3">
+                                <i class="bi bi-bell"></i>
+                                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                  99+
+                                  <span class="visually-hidden">unread messages</span>
+                                </span>
+                              </button>
+
+
+                        </li>
+
+                        <li class="navbar-item mx-2">
+                            <img style="width: 45px;height: 45px; border-radius: 50%; border: 3px solid rgb(45, 67, 78);"  src="../img/fotoperfil.jpg" alt="">
+                        </li>
+
+
+                        <li class="navbar-item dropdown mx-3">
+                                <a href="" class="nav-link dropdown-toggle" id="userDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Raul Madrid </a>
+                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                    <li>
+                                        <a href="" class="dropdown-item">
+                                            
+                                            <i class="bi bi-person"></i>&nbsp;&nbsp; 
+                                            Perfil
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                            <hr class="dropdown-divider">
+                                     </li>
+
+                                    <li>
+                                         <a href="" class="dropdown-item ">
+                                            <i class="bi bi-box-arrow-in-right"></i>&nbsp;&nbsp; 
+                                            Cerrar Sesion
+                                        </a>
+                                     </li>
+
+
+                                </ul>
+                        </li>
+
+
+
+
+                    </ul>
+                       
+
+                </div>
+
+
+
+            </div>
+        </nav>
+    </header>
+<section class="container-mt-4 p-4">
+ 
+   <!--Title section-->
+   <div class="d-flex justify-content-between">
+    <h4>Facturas y Pagos</h4>
+    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">   <i class="bi bi-plus-circle"></i>
+        Agregar
+    </button>
+
+
+   </div>
+    <!--Title section-->
+    
+
+    <!--Data-->
+   <div class="row">
+    <table class="table " >
+        <thead>
+          <tr>
+            <th scope="col">ID_PAGO</th>
+            <th scope="col">ID_RESERVACION</th>
+            <th scope="col">Nombre Completo</th>
+            <th scope="col">Monto</th>
+            <th scope="col">Fecha Pago</th>
+            <th scope="col">Metodo de Pago</th>
+            <th scope="col">Estado de Pago</th>
+            <th scope="col">Opciones</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>1</td>
+            <td>Raul Madrid Flores</td>
+            <td>$10,000</td>
+            <td>2024/11/06</td>
+            <td>Efectivo</td>
+            <td>Pendiente</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>2</td>
+            <td>Sergio sebastian flores Ramirez</td>
+            <td>$30,000</td>
+            <td>2024/10/11</td>
+            <td>Tarjeta</td>
+            <td>Pagado</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>3</td>
+            <td>Luis Javier Valverde Trejo</td>
+            <td>$8,000</td>
+            <td>2024/10/11</td>
+            <td>Transferencia</td>
+            <td>Pagado</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-pencil" ></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"  data-bs-toggle="modal" data-bs-target="#modalACTIVAR">
+                  <i class="bi bi-check-lg"></i>
+
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+
+
+
+          <tr>
+            <th scope="row">4</th>
+            <td>4</td>
+            <td>Juan Escutia</td>
+            <td>$14,000</td>
+            <td>2024/10/08</td>
+            <td>Efectivo</td>
+            <td>Pagado</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>5</td>
+            <td>Leonardo Camargo</td>
+            <td>$9,000</td>
+            <td>2024/01/06</td>
+            <td>Deposito</td>
+            <td>Pagado</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>19</td>
+            <td>Marisela Quintana</td>
+            <td>$20,000</td>
+            <td>2023/11/12</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>29  </td>
+            <td>Jose Torres</td>
+            <td>$24,500</td>
+            <td>2023/04/05</td>
+            <td>Efectivo</td>
+            <td>Pagado</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>46</td>
+            <td>Veronica Rubio</td>
+            <td>$6,000</td>
+            <td>2024/07/03</td>
+            <td>Efectivo</td>
+            <td>Pendiente</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>13</td>
+            <td>Jeremy Gonazales</td>
+            <td>$35,000</td>
+            <td>2024/09/10</td>
+            <td>Deposito</td>
+            <td>Pagado</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>27</td>
+            <td>Raymond Houston</td>
+            <td>$17,000</td>
+            <td>2024/02/02</td>
+            <td>Transferencia</td>
+            <td>Pendiente</td>
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+                 </button>
+
+                 <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
+                    <i class="bi bi-pencil"></i>
+
+                 </button>
+
+                 <button class="btn btn-outline-dark  btn-sm mx-1"data-bs-toggle="modal" data-bs-target="#modalACTIVAR" >
+                  <i class="bi bi-check-lg"></i>
+
+
+                 </button>
+
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+   </div>
+
+
+    <!--Data-->
+
+
+</section>
+
+
+
+</main>
+
+<!--End Main content-->
+<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Pago</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+       <form action="" class="needs-validation" novalidate id="form">
+
+
+      
+                <div class="modal-body " >
+
+                    <div class="row">
+                        <div class="col-6">
+
+                            <label for="">ID_Reservacion</label>
+                            <input required type="number" class="form-control" placeholder="Inserta el id de la reservacion ">
+                            <div class="valid-feedback">
+                               Correcto
+                              </div>
+                              <div class="invalid-feedback">
+                             Nombre no valido
+                              </div>
+                        </div>
+                        <div class="col-6">
+
+                            <label for="">Nombre</label>
+                            <input required type="text" class="form-control" placeholder="Inserta el nombre completo">
+                            <div class="valid-feedback">
+                                Correcto
+                               </div>
+                               <div class="invalid-feedback">
+                              Apellido  no valido
+                               </div>
+                        </div>
+
+                        <div class="col-4">
+
+                            <label for="">Monto</label>
+                            <input required type="number" class="form-control" placeholder="Inserta el monto ">
+                            <div class="valid-feedback">
+                                Correcto
+                               </div>
+                               <div class="invalid-feedback">
+                              Edad no valida
+                               </div>
+                        </div>
+                        <div class="col-4">
+
+                            <label for="">Fecha de Pago</label>
+                            <input required type="date" class="form-control" placeholder="Fecha de Pago">
+                            <div class="valid-feedback">
+                                Correcto
+                               </div>
+                               <div class="invalid-feedback">
+                             Peso no valido
+                               </div>
+                        </div>
+                        <div class="col-4">
+
+                            <label for="">Metodo de pago</label>
+                            <select class="form-control" >
+                                <option value="1">Efectivo</option>
+                                <option value="2">Transferencia</option>
+                                <option value="3">Deposito</option>
+                               
+                    
+                            </select>
+                            <div class="valid-feedback">
+                                Correcto
+                               </div>
+                               <div class="invalid-feedback">
+                              Altura no valida
+                               </div>
+                        </div>
+                        
+                      
+                        <div class="col-12">
+
+                            <label for="">Estado de Pago</label>
+                            <select class="form-control" >
+                                <option value="1">Pagado</option>
+                                <option value="2">Pendiente</option>
+                          
+                               
+                    
+                            </select>
+                            <div class="valid-feedback">
+                                Correcto
+                               </div>
+                               <div class="invalid-feedback">
+                              La contraseña es igual
+                               </div>
+                        </div>
+                    </div>
+                
+                    <div class="alert alert-danger mt-4 d-none" id="divAlerta" role="alert">
+                    Favor de lenar los campos 
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary" id="btnGuardar">Guardar</button>
+                </div>
+    </form>
+
+      </div>
+     </div>
+  </div>
+
+
+  <div class="modal" id="modalACTIVAR" tabindex="-1"aria-labelledby="modalACTIVAR" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Pasar de Pendiente a Pagado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>La reservacion pasara a Pagada ? Seguro que quieres Registrarla</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Si</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="modal" id="modalseguro" tabindex="-1"aria-labelledby="modalseguro" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Eliminar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Seguro que quieres eliminar el Pago, No hay forma de revertirlo </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-primary">Si</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/user1.js"></script>
+
+
+
+</body>
+</html>
