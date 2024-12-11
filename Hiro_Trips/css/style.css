@@ -139,6 +139,7 @@ header> div> div > #title > h2 {
     }
 
     .segundo{
+      margin-top: 100px;
      margin-left: 5%;
         width: 90%;
         height: 370px;
@@ -465,7 +466,7 @@ section.cuarta > .paquetes {
     box-sizing: border-box;
     position: relative;
     width: 230px;
-    height: 50px;
+    height: 45px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
