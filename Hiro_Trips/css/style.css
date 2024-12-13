@@ -17,75 +17,75 @@ body{
   src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 0%;
-    padding-right: 10%;
-    height: 70px;
-    padding-top: 0px;
-    background-color: black;
+  header{
+      display: flex;
+      justify-content: space-between;
+      padding-left: 0%;
+      padding-right: 10%;
+      height: 70px;
+      padding-top: 0px;
+      background-color: black;
 
-}
-header > div>#logo{
-    height: 210px;
-    width: 160px;
-    display:flex;
-    align-content: center;
+  }
+  header > div>#logo{
+      height: 210px;
+      width: 160px;
+      display:flex;
+      align-content: center;
 
-}
-header> div> div > #title > h2 {
-    align-items: fleX;
-    font-size: 2rem;
-    font-family: "Rubik", sans-serif;
-    color: white;
-    }
-    header >div{
-        margin-left: 100px;
-        height: 230px;
-        width: 180px;
-        margin-top: 0;
-        background-color:#F40000;
-        float: left;
-    z-index: 2;
-    }
-  
-    header >nav > ul {
-        display: flex;
-        margin-top: 12px;
-        
-    }
-    header > nav >ul >li{
-        list-style: none;
-        margin-left: 40px;
-        margin-top: 12px;
-     
+  }
+  header> div> div > #title > h2 {
+      align-items: fleX;
+      font-size: 2rem;
+      font-family: "Rubik", sans-serif;
+      color: white;
+      }
+      header >div{
+          margin-left: 100px;
+          height: 230px;
+          width: 180px;
+          margin-top: 0;
+          background-color:#F40000;
+          float: left;
+      z-index: 2;
+      }
     
-    }
-    header > nav > ul >#Buscar {
-        margin-right: 300px;
-        width: 200px;
-        display: flex;
-        justify-content: space-between;
-    }
+      header >nav > ul {
+          display: flex;
+          margin-top: 12px;
+          
+      }
+      header > nav >ul >li{
+          list-style: none;
+          margin-left: 40px;
+          margin-top: 12px;
+      
+      
+      }
+      header > nav > ul >#Buscar {
+          margin-right: 300px;
+          width: 200px;
+          display: flex;
+          justify-content: space-between;
+      }
 
 
- 
-    header > nav > ul >li > #bu{
-    margin-right: 300px;
+  
+      header > nav > ul >li > #bu{
+      margin-right: 300px;
 
-    }
+      }
 
 
-    header > nav > ul>  li >a {
-        text-decoration: none;
-        color: white;
-        font-size: 1.2rem;
-        
-    }
-    header > nav > ul >li >a.activado{
-        font-weight: bold;
-    }
+      header > nav > ul>  li >a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+          
+      }
+      header > nav > ul >li >a.activado{
+          font-weight: bold;
+      }
 
 
     .main  > img {
@@ -139,6 +139,7 @@ header> div> div > #title > h2 {
     }
 
     .segundo{
+      margin-top: 100px;
      margin-left: 5%;
         width: 90%;
         height: 370px;
@@ -465,7 +466,7 @@ section.cuarta > .paquetes {
     box-sizing: border-box;
     position: relative;
     width: 230px;
-    height: 50px;
+    height: 45px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;

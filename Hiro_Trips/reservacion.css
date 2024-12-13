@@ -1,0 +1,237 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('./img/fondoreservas.jpg');
+    background-size: cover; /* Asegura que la imagen cubra toda el área */
+    background-position: center center; /* Centra la imagen */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 10%;
+    height: 70px;
+    padding-top: 0px;
+    background-color: black;
+
+}
+header > div>#logo{
+    height: 210px;
+    width: 160px;
+    display:flex;
+    align-content: center;
+
+}
+header> div> div > #title > h2 {
+    align-items: fleX;
+    font-size: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    }
+    header >div{
+        margin-left: 100px;
+        height: 230px;
+        width: 180px;
+        margin-top: 0;
+        background-color:#F40000;
+        float: left;
+    z-index: 2;
+    }
+  
+    header >nav > ul {
+        display: flex;
+        margin-top: 12px;
+        
+    }
+    header > nav >ul >li{
+        list-style: none;
+        margin-left: 40px;
+        margin-top: 12px;
+     
+    
+    }
+    header > nav > ul >#Buscar {
+        margin-right: 300px;
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+ 
+    header > nav > ul >li > #bu{
+    margin-right: 300px;
+
+    }
+
+
+    header > nav > ul>  li >a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        
+    }
+    header > nav > ul >li >a.activado{
+        font-weight: bold;
+    }
+
+
+    .buscar-container {
+        position: relative;
+        box-sizing: border-box;
+        width: fit-content;
+      }
+      
+      .mainbox {
+        box-sizing: border-box;
+        position: relative;
+        width: 230px;
+        height: 45px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        border-radius: 160px;
+        background-color: rgb(0, 0, 0);
+        transition: all 0.3s ease;
+      }
+      
+      .checkbox:focus {
+        border: none;
+        outline: none;
+      }
+      
+      .checkbox:checked {
+        right: 10px;
+      }
+      
+      .checkbox:checked ~ .mainbox {
+        width: 50px;
+      }
+      
+      .checkbox:checked ~ .mainbox .search_input {
+        width: 0;
+        height: 0px;
+      }
+      
+      .checkbox:checked ~ .mainbox .iconContainer {
+        padding-right: 8px;
+      }
+      
+      .checkbox {
+        box-sizing: border-box;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 17px;
+        top: 0px;
+        z-index: 9;
+        cursor: pointer;
+        appearance: none;
+      }
+      
+      .search_input {
+        margin-bottom: 30px;
+        box-sizing: border-box;
+        height: 100%;
+        width: 170px;
+        background-color:transparent;
+        border: none;
+        outline: none;
+        padding-bottom: 4px;
+        padding-left: 10px;
+        font-size: 1em;
+        color: white;
+        transition: all 0.3s ease;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      
+      .search_input::placeholder {
+        color: rgba(255, 255, 255, 0.776);
+      }
+      
+      .iconContainer {
+        box-sizing: border-box;
+        padding-top: 5px;
+        width: fit-content;
+        transition: all 0.3s ease;
+      }
+      
+      .search_icon {
+        box-sizing: border-box;
+        fill: white;
+        font-size: 1.3em;
+        margin-bottom: 30px;
+      }
+    
+
+
+main {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding-top: 200px;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+   
+    bottom: 0;
+    width: 100%vh;
+}
+
+
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #F40000;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #F40000;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ad2828;
+}
