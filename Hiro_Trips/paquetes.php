@@ -40,7 +40,11 @@ $user_data=$_SESSION['user_data'];
  
    <!--Title section-->
    <div class="d-flex justify-content-between">
+<<<<<<< HEAD
     <h4>Paquetes </h4>
+=======
+    <h4>Hospedaje</h4>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     <a class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">   <i class="bi bi-plus"></i>
         Agregar Paquete
     </a>
@@ -63,7 +67,11 @@ $user_data=$_SESSION['user_data'];
       <div class="card mb-3" style="max-width: 615px;">
           <div class="row g-0">
             <div class="col-md-4">
+<<<<<<< HEAD
               <img src="./img/paquetes/<?php  echo $fila['IMAGEN']?>" style="height: 250px;width: 300px;" class="img-fluid rounded-start" alt="...">
+=======
+              <img src="./css/imgcss/lobo2.webp" style="height: 250px;width: 300px;" class="img-fluid rounded-start" alt="...">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             </div>
             <div class="col-md-8">
               <div class="card-body">
@@ -79,7 +87,11 @@ $user_data=$_SESSION['user_data'];
                 <?php  echo $fila['DESCRIPCION']?>
                 </p>
                 
+<<<<<<< HEAD
                 <button data-id="<?php  echo $fila['ID_PAQUETE']?>" class="btnEliminarPaquetes btn btn-primary btn-dark" >Eliminar</button>
+=======
+                <a href="#" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
               </div>
             </div>
           </div>
@@ -125,7 +137,11 @@ $user_data=$_SESSION['user_data'];
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
+<<<<<<< HEAD
        <form action="../php/add-paquetes.php" enctype="multipart/form-data" class="needs-validation" novalidate id="form" method="post">
+=======
+       <form action="../php/add-paquetes.php" class="needs-validation" novalidate id="form" method="post">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 
       
@@ -230,6 +246,7 @@ $user_data=$_SESSION['user_data'];
 <script src="./js/user1.js"></script>
 
 
+<<<<<<< HEAD
 <?php
 
 if(isset($_GET['status'])){
@@ -292,6 +309,8 @@ Swal.fire({
 ?>
 
 
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 </body>
 </html>

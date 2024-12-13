@@ -1,6 +1,10 @@
 <?php
 include "../php/conexion.php";
+<<<<<<< HEAD
 $sql="select * from COMIDA2 order by ID_COMIDA ";
+=======
+$sql="select * from COMIDA order by ID_COMIDA ";
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 $res =$conexion ->query("$sql") or die ($conexion->error);
 
 
@@ -66,6 +70,7 @@ $user_data=$_SESSION['user_data'];
             <img src="./img/huevo1.jpg" class="card-img-top" style="height: 200px;" alt="...">
             <div class="card-body">
               <h5 class="card-title"><?php  echo $fila['ID_COMIDA']?></h5>
+<<<<<<< HEAD
               <p class="card-text"><?php  echo $fila['NOMBRE']?></p>
               <p class="card-text"><?php  echo $fila['DESCRIPCION']?></p>
               <p class="card-text"><?php  echo $fila['TOTAL_CALORIAS']?></p>
@@ -73,6 +78,11 @@ $user_data=$_SESSION['user_data'];
               <p class="card-text">$<?php  echo $fila['PRECIO']?></p>
               <p class="card-text"><?php  echo $fila['PROCEDIMIENTO']?></p>
               
+=======
+              <p class="card-text"><?php  echo $fila['TIPO']?></p>
+              <p class="card-text"><?php  echo $fila['PRECIO']?></p>
+              <p class="card-text"><?php  echo $fila['ID_PAQUETE']?></p>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
               <a href="#" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#modaleditar">Editar</a>
             </div>
           </div>

@@ -1,7 +1,11 @@
 <?php 
     include "./conexion.php";
     $id=$_POST['id'];
+<<<<<<< HEAD
     
+=======
+    $reservacion=$_POST['txtReservacion'];
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     $name=$_POST['txtNombre'];
     $monto=$_POST['txtMonto'];
     $fecha=$_POST['txtFecha'];
@@ -12,7 +16,11 @@
    
 
 $consulta = "update PAGOS set 
+<<<<<<< HEAD
 
+=======
+ID_RESERVACION=$reservacion,
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 NOMBRE='$name',
 MONTO=$monto,
 FECHA_PAGO='$fecha',

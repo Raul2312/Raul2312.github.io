@@ -70,7 +70,11 @@ $user_data=$_SESSION['user_data'];
               CAPACIDAD:   <?php  echo $fila['CAPACIDAD']?> PERSONAS<br>
               CONSUMO DE COMBUSTIBLE:   <?php  echo $fila['CONSUMO']?><br>
               <?php  echo $fila['DESCRIPCION']?></p>
+<<<<<<< HEAD
               <button  data-id="<?php  echo $fila['ID_TRANSPORTE']?>" class="btnEliminarTransporte btn btn-primary btn-dark">Eliminar</button>
+=======
+              <a href="#" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             </div>
           </div>
 
@@ -256,6 +260,7 @@ $user_data=$_SESSION['user_data'];
 <script src="./js/user1.js"></script>
 
 
+<<<<<<< HEAD
 <?php
 
 if(isset($_GET['status'])){
@@ -319,6 +324,8 @@ Swal.fire({
 
 
 
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 </body>
 </html>

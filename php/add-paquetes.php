@@ -6,6 +6,7 @@ $precio=$_POST['txtPrecio'];
 $descripcion=$_POST['txtDescripcion'];
 $cantidad=$_POST['txtCantidad'];
 $descuento=$_POST['txtDescuento'];
+<<<<<<< HEAD
 
 
 $file=$_FILES['txtImagen']['name'];
@@ -27,6 +28,15 @@ header("Location:../Hiro_Trips/paquetes.php?status=1");
     echo "Algo fallo en la subida del archivo";
     header("Loacation: ../Hiro_Trips/paquetes.php?status=0");
 }
+=======
+$imagen=$_POST['txtImagen'];
+
+$consulta="INSERT INTO PAQUETE (NOMBRE_PAQUETE, PRECIO, CANTIDAD_PERSONAS, DESCUENTOS, DESCRIPCION, IMAGEN) 
+VALUES('$name','$precio', '$cantidad', '$descuento', '$descripcion', '$imagen');";
+
+$conexion->query($consulta) or die ($conexion->error);
+echo "Registro insertado correctamente";
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 
 ?>

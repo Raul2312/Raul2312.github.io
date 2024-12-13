@@ -76,8 +76,13 @@ $user_data=$_SESSION['user_data'];
                 <?php  echo $fila['DESCRIPCION']?>
                 </p>
                 
+<<<<<<< HEAD
                 <button  class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</button>
                 <button data-id="<?php  echo $fila['ID_HOSPEDAJE']?>" class="btnEliminarHospedaje btn btn-primary btn-dark"  >Eliminar</button>
+=======
+                <a href="#" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a>
+                <a href="#" class="btn btn-primary btn-dark" data-bs-toggle="modal" data-bs-target="#modalseguro">Eliminar</a>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
               </div>
             </div>
           </div>
@@ -192,15 +197,22 @@ $user_data=$_SESSION['user_data'];
   </div>
 
 
+<<<<<<< HEAD
   <div class="modal" id="modalseguro" tabindex="-1" aria-labelledby="modalseguro" aria-hidden="true">
+=======
+  <div class="modal" id="modalseguro" tabindex="-1"aria-labelledby="modalseguro" aria-hidden="true">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Eliminar</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
+<<<<<<< HEAD
 
         <form action="../php/add-hoteles.php" enctype="multipart/form-data" class="needs-validation1" novalidate id="form" method="post">
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
         <div class="modal-body">
           <p>Seguro que quieres eliminar el Hotel, No hay forma de revertirlo </p>
         </div>
@@ -208,9 +220,13 @@ $user_data=$_SESSION['user_data'];
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
           <button type="button" class="btn btn-primary">Si</button>
         </div>
+<<<<<<< HEAD
         </form>
       </div>
 
+=======
+      </div>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     </div>
   </div>
 
@@ -227,6 +243,7 @@ $user_data=$_SESSION['user_data'];
 
 
 
+<<<<<<< HEAD
 <?php
 
 if(isset($_GET['status'])){
@@ -272,22 +289,83 @@ Swal.fire({
 
 
 
+=======
+<?php 
+if(isset($_GET['status'])){
+  if($_GET['status']== 1){
+
+
+
+?>
+
+               <script>
+                  Try me!
+                  Swal.fire({
+                    position: "top-end",
+                    icon: "success",
+                    title: "Your work has been saved",
+                    showConfirmButton: false,
+                    timer: 1500
+                  });
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 
 
 </script>
+<<<<<<< HEAD
 <?php
 
+=======
+
+<?php
+  }else{
+
+
+
+?>
+
+<script>
+
+
+footer
+
+Try me!
+Swal.fire({
+  icon: "error",
+  title: "Oops...",
+  text: "Something went wrong!",
+  footer: '<a href="#">Why do I have this issue?</a>'
+});
+
+
+</script>
+
+
+
+
+<?php 
+
+
+
+  }
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 }
 
 
 
 
 
+<<<<<<< HEAD
 
 
 ?>
 
 
+=======
+?>
+
+
+
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 </body>
 </html>

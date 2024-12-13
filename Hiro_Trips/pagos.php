@@ -1,6 +1,16 @@
 <?php
 include "../php/conexion.php";
+<<<<<<< HEAD
 $sql="select * from PAGOS order by ID_PAGO";
+=======
+$sql="SELECT 
+    PAGOS.*,
+    RESERVACIONES.ID_RESERVACION
+FROM 
+    PAGOS
+INNER JOIN 
+    RESERVACIONES ON PAGOS.ID_RESERVACION = RESERVACIONES.ID_RESERVACION; ";
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 $res =$conexion ->query("$sql") or die ($conexion->error);
 
 
@@ -53,7 +63,11 @@ $user_data=$_SESSION['user_data'];
         <thead>
           <tr>
             <th scope="col">ID_PAGO</th>
+<<<<<<< HEAD
             
+=======
+            <th scope="col">ID_RESERVACION</th>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             <th scope="col">Nombre Completo</th>
             <th scope="col">Monto</th>
             <th scope="col">Fecha Pago</th>
@@ -72,7 +86,11 @@ $user_data=$_SESSION['user_data'];
         ?>
           <tr>
             <th scope="row"><?php  echo $fila['ID_PAGO']?></th>
+<<<<<<< HEAD
             
+=======
+            <td><?php  echo $fila['ID_RESERVACION']?></td>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             <td><?php  echo $fila['NOMBRE']?></td>
             <td>$<?php  echo $fila['MONTO']?></td>
             <td><?php  echo $fila['FECHA_PAGO']?></td>
@@ -85,7 +103,11 @@ $user_data=$_SESSION['user_data'];
 
                  <button
                    data-id="<?php  echo $fila['ID_PAGO']?>"
+<<<<<<< HEAD
                  
+=======
+                  data-reservacion="<?php  echo $fila['ID_RESERVACION']?>"
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                   data-nombre="<?php  echo $fila['NOMBRE']?>"
                   data-monto="<?php  echo $fila['MONTO']?>"
                   data-fecha="<?php  echo $fila['FECHA_PAGO']?>"
@@ -142,7 +164,21 @@ $user_data=$_SESSION['user_data'];
                 <div class="modal-body " >
 
                     <div class="row">
+<<<<<<< HEAD
                        
+=======
+                        <div class="col-6">
+
+                            <label for="">ID_Reservacion</label>
+                            <input  name="txtReservacion" required type="number" class="form-control" placeholder="Inserta el id de la reservacion ">
+                            <div class="valid-feedback">
+                               Correcto
+                              </div>
+                              <div class="invalid-feedback">
+                             Nombre no valido
+                              </div>
+                        </div>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                         <div class="col-6">
 
                             <label for="">Nombre</label>
@@ -248,7 +284,21 @@ $user_data=$_SESSION['user_data'];
                 <div class="modal-body " >
                     <input type="hidden" name="id" id="txtIdEdit"   />
                     <div class="row">
+<<<<<<< HEAD
                        
+=======
+                        <div class="col-6">
+
+                            <label for="">ID_Reservacion</label>
+                            <input id="txtId" name="txtReservacion" required type="number" class="form-control" placeholder="Inserta el id de la reservacion ">
+                            <div class="valid-feedback">
+                               Correcto
+                              </div>
+                              <div class="invalid-feedback">
+                             Nombre no valido
+                              </div>
+                        </div>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                         <div class="col-6">
 
                             <label for="">Nombre</label>

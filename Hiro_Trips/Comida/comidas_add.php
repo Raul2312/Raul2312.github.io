@@ -1,6 +1,10 @@
 <?php
 include "../../php/conexion.php";
+<<<<<<< HEAD
 $sql="select * from COMIDA2 order by ID_COMIDA ";
+=======
+$sql="select * from COMIDA order by ID_COMIDA ";
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 $res =$conexion ->query("$sql") or die ($conexion->error);
 
 
@@ -8,7 +12,11 @@ $res =$conexion ->query("$sql") or die ($conexion->error);
 
 <?php session_start();
 if(!isset($_SESSION['user_data'])){
+<<<<<<< HEAD
 header("Location: ../Hiro_Trips/inicio.php");
+=======
+header("Location:../Hiro_Trips/inicio.php");
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 
 }
@@ -29,6 +37,7 @@ $user_data=$_SESSION['user_data'];
 </head>
 <body class="d-flex">
     <!--sidebar-->
+<<<<<<< HEAD
     <aside class="d-flex " style="width: 13%;">
         <div class=" text-black p-3  w-100 " style="background-color: #080808; min-height: 100vh;" >
             <h2 class="h3 text-center text-white">  <img src="../img/LOGOBLANCO.webp " class="card-img-top" alt="..." style="height: 100PX; width: 100PX; " >
@@ -83,12 +92,19 @@ $user_data=$_SESSION['user_data'];
             </nav>
         </div>
     </aside>
+=======
+    <?php include "../layouts/aside.php";    ?>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
    
 <!--end sidebar-->
 <!--Main content-->
 
 <main class="flex-grow-1 ">
+<<<<<<< HEAD
 <?php include "../layouts/header.php"?>
+=======
+<?php include "../layouts/header.php" ?>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
     
 <section class="container mt-4 p-4">

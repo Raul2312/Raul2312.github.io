@@ -1,6 +1,10 @@
 <?php
 include "../php/conexion.php";
+<<<<<<< HEAD
 $sql="select * from USUARIOS order by ID_USUARIOS ";
+=======
+$sql="select * from USUARIOS order by ID_USUARIOS DESC";
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 $res =$conexion ->query("$sql") or die ($conexion->error);
 
 
@@ -38,7 +42,11 @@ $user_data=$_SESSION['user_data'];
    <!--Title section-->
    <div class="d-flex justify-content-between">
     <h4>Usuarios Activos</h4>
+<<<<<<< HEAD
     <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalagregar">   <i class="bi bi-plus-circle"></i>
+=======
+    <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">   <i class="bi bi-plus-circle"></i>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
         Agregar Usurios 
     </button>
 
@@ -54,12 +62,20 @@ $user_data=$_SESSION['user_data'];
           <tr>
             <th scope="col">#</th>
             <th scope="col">Nombre</th>
+<<<<<<< HEAD
             <th scope="col">Apellido Paterno</th>
             <th scope="col">Apellido Materno</th>
             <th scope="col">Edad</th>
             
             <th scope="col">Correo</th>
             <th scope="col">telefono</th>
+=======
+            <th scope="col">Apellido</th>
+            <th scope="col">Edad</th>
+            
+            <th scope="col">Correo</th>
+            <th scope="col">img</th>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             <th scope="col">Opciones</th>
             
           </tr>
@@ -74,7 +90,10 @@ $user_data=$_SESSION['user_data'];
             <th scope="row"><?php  echo $fila['ID_USUARIOS']?></th>
             <td> <?php echo $fila ['NOMBRE'] ?></td>
             <td><?php echo $fila ['AP_PATERNO'] ?></td>
+<<<<<<< HEAD
             <td><?php echo $fila ['AP_MATERNO'] ?></td>
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             <td><?php echo $fila ['EDAD'] ?></td>
             <td><?php echo $fila ['CORREO'] ?></td>
             <td><?php echo $fila ['TELEFONO'] ?></td>
@@ -119,6 +138,7 @@ $user_data=$_SESSION['user_data'];
 </main>
 
 <!--End Main content-->
+<<<<<<< HEAD
 <div class="modal fade modal-lg" id="modalagregar" tabindex="-1" aria-labelledby="modalagregar" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -250,6 +270,9 @@ $user_data=$_SESSION['user_data'];
 
 
   <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+=======
+<div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -378,7 +401,11 @@ $user_data=$_SESSION['user_data'];
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="./js/user1.js"></script>
 
+<<<<<<< HEAD
 <?php
+=======
+<?php 
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 if(isset($_GET['status'])){
   $message="";
@@ -386,13 +413,17 @@ if(isset($_GET['status'])){
   if($_GET['status']==1){
 
     //inserta correcta
+<<<<<<< HEAD
     $icon="success";
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     $message="Registro insertado correctamente";
 
   }else if($_GET['status']==2){
 
 
     //actualizacion correcta
+<<<<<<< HEAD
     $icon="success";
  $message="Registro actualizado correctamente";
  }  else if($_GET['status']==3){
@@ -406,6 +437,13 @@ if(isset($_GET['status'])){
 
 
 
+=======
+ $message="Registro actualizado correctamente";
+ }  else if($_GET['status']==3){
+  //eliminado corrctamente
+ $message="Registro eliminado correctamente";
+
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
  }
 ?>
 
@@ -414,18 +452,25 @@ if(isset($_GET['status'])){
 <script>
 Swal.fire({
 
+<<<<<<< HEAD
   icon:"<?php echo $icon ?>",
+=======
+  icon: "success",
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
   title: "<?php echo $message ?>",
   showConfirmButton: false,
   timer: 1500
 });
 
 
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 </script>
 <?php
 
@@ -433,10 +478,13 @@ Swal.fire({
 
 
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 ?>
 
 

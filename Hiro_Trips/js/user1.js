@@ -27,6 +27,12 @@ for(var i=0;i<botonesEditar.length;i++){
     document.getElementById("txtIdEdit").value=id
 
 
+<<<<<<< HEAD
+=======
+    var idreservacion=btn.getAttribute("data-reservacion")
+    document.getElementById("txtId").value=idreservacion
+    
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
     var nombre=btn.getAttribute("data-nombre")
     document.getElementById("txtNombreEdit").value=nombre
 
@@ -188,6 +194,7 @@ for (var i = 0; i < buttons_em.length; i++) {
 }
 
 
+<<<<<<< HEAD
 var buttons_re = document.getElementsByClassName("btnEliminarReservas");
 
 for (var i = 0; i < buttons_re.length; i++) {
@@ -304,6 +311,8 @@ for (var i = 0; i < buttons_ho.length; i++) {
 
 
 
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
 
 

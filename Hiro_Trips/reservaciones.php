@@ -56,6 +56,7 @@ $user_data=$_SESSION['user_data'];
           <tr>
             <th scope="col">#</th>
             <th scope="col">Nombre Completo</th>
+<<<<<<< HEAD
             
             <th scope="col">Paquete</th>
             <th scope="col">EMPLEADO</th>
@@ -65,6 +66,15 @@ $user_data=$_SESSION['user_data'];
             <th scope="col">COMIDA</th>
             <th scope="col">FECHA INICIO</th>
             <th scope="col">FECHA REGRESO</th>
+=======
+            <th scope="col">ID_Usuarios</th>
+            <th scope="col">Id_Paquete</th>
+            <th scope="col">ID_empleado</th>
+            <th scope="col">ID_Pago</th>
+            <th scope="col">ID_Transporte</th>
+            <th scope="col">ID_Hospedaje</th>
+            <th scope="col">ID_Comida</th>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
             <th scope="col">Opciones</th>
             
           </tr>
@@ -76,6 +86,7 @@ $user_data=$_SESSION['user_data'];
         ?>
           <tr>
             <th scope="row"><?php  echo $fila['ID_RESERVACION']?></th>
+<<<<<<< HEAD
             <td><?php  echo $fila['USUARIO']?></td>
             <td><?php  echo $fila['PAQUETE']?></td>
             <td><?php  echo $fila['NOMBRE_EMPLEADO']?></td>
@@ -90,6 +101,20 @@ $user_data=$_SESSION['user_data'];
             <td>
                 <button data-id="<?php  echo $fila['ID_RESERVACION']?>" class="btnEliminarReservas btn btn-outline-danger btn-sm mx-1" >
                     <i class="bi bi-trash3" data-id="<?php  echo $fila['ID_RESERVACION']?>"></i>
+=======
+            <td><?php  echo $fila['ID_NOMBRE']?></td>
+            <td><?php  echo $fila['ID_USUARIOS']?></td>
+            <td><?php  echo $fila['ID_PAQUETE']?></td>
+            <td><?php  echo $fila['ID_EMPLEADO']?></td>
+            <td><?php  echo $fila['ID_PAGO']?></td>
+            <td><?php  echo $fila['ID_TRANSPORTE']?></td>
+            <td><?php  echo $fila['ID_HOSPEDAJE']?></td>
+            <td><?php  echo $fila['ID_COMIDA']?></td>
+            
+            <td>
+                <button class="btn btn-outline-danger btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#modalseguro">
+                    <i class="bi bi-trash3"></i>
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                  </button>
 
                  <button class="btn btn-outline-warning btn-sm mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -127,6 +152,7 @@ $user_data=$_SESSION['user_data'];
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
+<<<<<<< HEAD
           <h1 class="modal-title fs-5" id="exampleModalLabel">Agregar Reservacion</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -270,6 +296,8 @@ $user_data=$_SESSION['user_data'];
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
           <h1 class="modal-title fs-5" id="exampleModalLabel">Editar Reservacion</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -294,8 +322,13 @@ $user_data=$_SESSION['user_data'];
                         </div>
                         <div class="col-3">
 
+<<<<<<< HEAD
                             <label for="">Paquete</label>
                             <input required type="text" class="form-control" placeholder="Inserta el paquete">
+=======
+                            <label for="">ID_Usuario</label>
+                            <input required type="text" class="form-control" placeholder="Inserta el id_usuario">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -306,8 +339,13 @@ $user_data=$_SESSION['user_data'];
 
                         <div class="col-3">
 
+<<<<<<< HEAD
                             <label for="">Empleado</label>
                             <input required type="text" class="form-control" placeholder="Inserta el empleado">
+=======
+                            <label for="">Id_Paquete</label>
+                            <input required type="text" class="form-control" placeholder="Inserta el Id_Paquete">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -317,8 +355,13 @@ $user_data=$_SESSION['user_data'];
                         </div>
                         <div class="col-4">
 
+<<<<<<< HEAD
                             <label for="">Monto</label>
                             <input required type="text" class="form-control" placeholder="Inserta el monto de la reservacion">
+=======
+                            <label for="">Id_Empleado</label>
+                            <input required type="text" class="form-control" placeholder="Inserta el Id_Empleado">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -330,8 +373,13 @@ $user_data=$_SESSION['user_data'];
                        
                         <div class="col-4">
 
+<<<<<<< HEAD
                             <label for="">Transporte</label>
                             <input required type="text" class="form-control" placeholder="Inserta el transporte">
+=======
+                            <label for="">Id_Pago</label>
+                            <input required type="text" class="form-control" placeholder="Inserta el Id_Pago">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -341,8 +389,13 @@ $user_data=$_SESSION['user_data'];
                         </div>
                         <div class="col-4">
 
+<<<<<<< HEAD
                             <label for="">Hotel</label>
                             <input required type="password" class="form-control" placeholder="Inserta el Hotel">
+=======
+                            <label for="">Id_Transporte</label>
+                            <input required type="password" class="form-control" placeholder="Inserta el Id_Transporte">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -353,8 +406,13 @@ $user_data=$_SESSION['user_data'];
 
                         <div class="col-4">
 
+<<<<<<< HEAD
                             <label for="">Comida</label>
                             <input required type="password" class="form-control" placeholder="Inserta el platillo">
+=======
+                            <label for="">ID_Hospedaje</label>
+                            <input required type="password" class="form-control" placeholder="Inserta el Id_Hospedaje">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -366,8 +424,13 @@ $user_data=$_SESSION['user_data'];
 
                         <div class="col-4">
 
+<<<<<<< HEAD
                             <label for="">Fecha de Inicio</label>
                             <input required type="password" class="form-control" placeholder="Inserta la fecha de inicio">
+=======
+                            <label for="">ID_Comida</label>
+                            <input required type="password" class="form-control" placeholder="Inserta el Id_Comida">
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
                             <div class="valid-feedback">
                                 Correcto
                                </div>
@@ -375,6 +438,7 @@ $user_data=$_SESSION['user_data'];
                              Id no valido
                                </div>
                         </div>
+<<<<<<< HEAD
                         <div class="col-4">
 
                         <label for="">Fecha de Regreso</label>
@@ -386,6 +450,8 @@ $user_data=$_SESSION['user_data'];
                         Id no valido
                           </div>
                         </div>
+=======
+>>>>>>> f6af56bddc9636e1fe24a44c6d06e93d62d4be54
 
                     </div>
                 
