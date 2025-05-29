@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+    background-repeat: repeat;
+background-image: url(./degradado2.png);
+background-size: cover ;
+
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 70px;
+    padding-top: 10px;
+}
+
+header > #logo{
+    display: flex;
+    height: 70px;
+    width: 70px;
+    
+}
+
+
+header> #title > h2 {
+font-size: 2rem;
+font-family: "Rubik", sans-serif;
+text-align: left;
+
+}
+header >nav > ul {
+    display: flex;
+    margin-top: 12px;
+}
+header > nav >ul >li{
+    list-style: none;
+    margin-left: 40px;
+
+}
+header > nav > ul>  li >a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+header > nav > ul >li >a.activado{
+    font-weight: bold;
+}
+header > div > button#btnLogin {
+background-color: #CEBB14;
+width: 120px;
+height: 30px;
+padding: 7.5px;
+border: none;
+border-radius: 14px;
+color: #333;
+margin-top: 10px;
+transition: 500ms ease-in all;
+}
+header > div > button#btnLogin:hover {
+cursor: pointer;
+color: #CEBB14;
+background-color: #333;
+border-radius: 0;
+}
+header > div > a{
+     display: none;
+}
+section#main{
+    width: 100%;
+    height: 100%;
+  
+    display: flex;
+    align-items:start;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section#main > div {
+    width: 50%;
+    
+    
+    
+}
+
+section#main > div > img {
+  margin-top: 20px;
+  margin-left: -150px;
+    width: 700px;
+    transition: .7s ease-in-out all;
+}
+section#main > div > img:hover {
+    transform:scale(1.1);
+}
+section#main > div > h2{
+    font-size: 2rem;
+    background-color: #2d282821;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px  ;
+    margin-right: 200px;
+
+}
+
+section#main div > .contenedor-info{
+    background-color: #2d282821;
+    border-radius: 15px;
+    width: auto;
+    height: auto;
+    margin-right: 200px;
+}
+section#main > div >h3{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+section#main > div > .contenedor-info>.titulos{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+section#main > div > p{
+    padding-left: 5px;
+    font-weight: 400;
+    color: #000000;
+}
+section#main >div  >div#totales {
+    display: flex;
+}
+section#main >div  >div#totales >h5 {
+    font-size: 2rem;
+    font-weight: 200;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 30px;
+
+}
+section#main >div  >div#totales >h6 {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-left: 10px;
+}

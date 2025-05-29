@@ -1,0 +1,485 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0%;
+    padding-right: 10%;
+    height: 70px;
+    padding-top: 0px;
+    background-color: black;
+}
+header > div>#logo{
+    height: 180px;
+    width: 160px;
+    display:flex;
+    align-content: center;
+
+}
+header> div> div > #title > h2 {
+    align-items: fleX;
+    font-size: 2rem;
+    font-family: "Rubik", sans-serif;
+    color: white;   
+    }
+    header >div{
+        height: 200px;
+        width: 180px;
+        margin-top: 0;
+        background-color: #00f451;
+   float: left;
+    z-index: 2;
+    }
+  
+    header >nav > ul {
+        display: flex;
+        margin-top: 12px;
+    }
+    header > nav >ul >li{
+        list-style: none;
+        margin-left: 40px;
+        margin-top: 12px;
+     
+    
+    }
+    header > nav > ul>  li >a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        
+    }
+    header > nav > ul >li >a.activado{
+        font-weight: bold;
+    }
+
+.main {
+    position: relative;
+    text-align: top ;
+   
+}
+
+.main >img {
+    width: 100%;
+    height: 900px;
+   
+}
+
+.main-text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: #111111;
+    font-size: 3.0rem;
+  
+}
+.main-text2 {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: #090909;
+    font-size: 3.0rem;
+  
+}
+
+
+.main> h1 {
+    font-size: 4.0rem;
+    margin-bottom: 20px;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.register {
+    background-color: white;
+    color: black;
+}
+
+.login {
+   
+    background-color: #00ff00;
+    color: white;
+}
+
+  
+
+    body >h1{
+        font-size: 600rem;
+    }
+
+
+    section#main > div >img{
+        width: 100%;
+        height: 900px;
+        position:relative;
+        z-index: 1;
+    }
+
+
+    ma
+    section#main >div > nav > div > a{
+        height: 100px;
+        width: 100px;
+
+    }
+    .informacion{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between ;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-top:150PX;
+        
+    }
+    .informacion >div> #logoa {
+        height: 150px;
+        width: 150px;   
+    }
+    body{
+        background-color: #33333306;
+    }
+body > #boton{
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+
+}
+body > #boton> #btnvermas{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 40px;
+background-color: #00ff00;
+color: #090909;
+font-weight: bold;
+}
+
+.foto2> img{
+    margin-top: 200px;
+    width: 100%;
+    height: 700px;
+    
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer > div > #logobajo{
+    height: 100px;
+    width: 100px;
+}
+
+
+
+footer >.footer-links >ul>footer> .footer-contact> ul {
+    list-style: none;
+}
+
+footer >.footer-links >ul >li>footer >.footer-contact> ul >li {
+    margin-bottom: 10px;
+}
+
+footer> .footer-links ul> li> a>footer> .footer-contact >ul >li >a {
+    color: white;
+    text-decoration: none;
+}
+
+footer >.footer-contact >ul >li> a:hover {
+    color: #00ff00;
+}
+footer > .footer-links > ul >li{
+    list-style: none;
+}
+
+footer > .footer-contact> ul >li{
+    list-style: none;
+}
+.años{
+display: flex;
+justify-content: space-between;
+width: 100%;
+
+
+}
+.años > div{
+    background-color: #333;
+color: white;
+width: 33.3%;
+height: 250px;
+border-radius: 15px;
+
+}
+.años >div> img{
+    width: 100%;
+height: 100%;
+border-radius: 15px;
+transition: ease-in all;
+}
+.años > div >img:hover{
+   transform: scale(3rem);
+}
+
+
+.años2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+    }
+.años2 > div{
+    display: flex;
+    background-color: #333;
+    color: white;
+    width: 33.3%;
+    height: 250px;
+    border-radius: 15px;
+    margin: 20px;
+     justify-content: center;
+   
+    
+    }
+
+
+    
+    /* Contenedor para los botones */
+    .buttons-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+      
+    }
+    
+    /* Estilo general para los botones */
+    .decade-btn {
+        padding: 20px 40px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size:60px;
+        font-weight: bold;
+        cursor: pointer;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+    }
+    
+    /* Efecto hover */
+    .decade-btn:hover {
+        transform: scale(1.1);
+    }
+    
+    /* Fondos específicos para cada década */
+    #btn-70s {
+        background-image: url('./retro-flyers-9038350_1280.jpg'); /* Cambia a una imagen representativa de los 70s */
+    }
+    
+    #btn-80s {
+        background-image: url('./80s.jpg'); /* Cambia a una imagen representativa de los 80s */
+    }
+    
+    #btn-90s {
+        background-image: url('./90s.jpg'); /* Cambia a una imagen representativa de los 90s */
+    }
+    
+    #btn-2000s {
+        background-image: url('./2000.jpg'); /* Cambia a una imagen representativa de los 2000s */
+    }
+    
+    #btn-2010s {
+        background-image: url('./2010.jpg'); /* Cambia a una imagen representativa de los 2010s */
+    }
+    
+    #btn-2020s {
+        background-image: url('./fondoboton2020.png'); /* Cambia a una imagen representativa de los 2020s */
+    }
+#foto2{
+        width: 100%;
+        height:500px  ;
+    }
+   section.foto2 >div {
+    display: flex;
+    width: 100%;
+    height: 400px;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+   
+  
+
+
+    
+background-image: url(./fonfdobajo2.jpg)
+
+ }
+ section.foto2 >div >h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+color: rgb(255, 255, 255);
+font-family:Georgia, 'Times New Roman', Times, serif;
+align-content: center;
+ }
+
+
+
+
+    /*body historia o linea del tiempo */
+    #pagina2   {
+
+        font-family: Arial, sans-serif;
+        background-repeat: none;
+   background-image: url(./steampunk-1636156_1280.png);
+        margin: 0;
+        padding: 0 ;
+
+
+    }
+    
+    /* Contenedor de la línea de tiempo */
+    .timeline {
+        position: relative;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    /* Estilo para cada contenedor de eventos */
+    .timeline-event {
+        padding: 20px 40px;
+        position: relative;
+        width: 50%;
+        background-color: white;
+        border-radius: 6px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+     transition: 500ms ease-in-out all;
+    
+
+    }
+  
+    .timeline-event:hover{
+        background-color: #090909;
+        transform: scale(3rem);
+        color: white;
+     
+    }
+    
+    /* Eventos alternados a la izquierda y derecha */
+    .timeline-event:nth-child(odd) {
+        left: 0;
+    }
+    
+    .timeline-event:nth-child(even) {
+        left: 50%;
+    }
+    
+    /* Circulo en la línea de tiempo */
+    .timeline::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: #333;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    
+    /* Circulo indicador */
+    .timeline-event::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        background-color: #ff9f55;
+        border: 3px solid #fff;
+        top: 30px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    /* Ajustes para eventos alternados */
+    .timeline-event:nth-child(even)::after {
+        left: -10px;
+    }
+    
+    /* Contenido de los eventos */
+    .timeline-event h2 {
+        margin: 0 0 10px;
+        font-size: 24px;
+    }
+    
+    .timeline-event p {
+        margin: 0;
+    }
+    .informacion{
+        margin-top: 70px;
+        background-color:#000000;
+    }
+  .informacion >.cuadro-a{
+    font-size: 20px;
+    text-align: center;
+    height: 300px;
+    width: 30%;
+    border-radius: 30px;
+    transition: 500ms ease-in-out all;
+    overflow: hidden;
+    color: white;
+    }
+    .informacion >.cuadro-a:hover{
+        font-size: 20px;
+        text-align: center center;
+        height: 300px;
+        width: 33%;
+        background-color: #00ff00  ;
+        color: rgb(0, 0, 0);
+        }
+    .acercade{
+    text-align: center;
+margin-top: 30px;
+    }
+    .acercade>h1{
+    
+    font-size: 50px;
+    font-weight: 200;
+    }
+    .decadas {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .decadas >h1{
+        font-size: 50px;
+        font-weight: 200;
+    }

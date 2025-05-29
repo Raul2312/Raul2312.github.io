@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 3 </title>
+    <link rel="stylesheet" href="./css/2010s.css">
+    <link rel="stylesheet" href="./css/mediaquerys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+
+        
+<div id="logo">
+    <img src="./img/logo pagina automatas.png" alt="">
+   
+  
+</div>
+            
+        <div id="title">
+            <h2>TuringFlow</h2>
+        </div>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html" class="activado">Inicio</a></li>
+                <li><a href="historia.html">Linea del tiempo </a></li>
+              
+                <li><a href="./conceptos.html">Conceptos</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <div>
+            <button id="btnLogin" onclick="window.location.href='./2020s.html'"  >
+                <i class="fa-solid fa-right-to-bracket"></i>
+              Siguiente 
+            </button>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+    <!--Seccion Principal-->
+
+    <section id="main">
+        <div>
+            
+            <h2>Optimización.</h2>
+
+<div class="contenedor-info">
+
+    <h3 class="titulos">3.1 Tipos de optimización</h3>
+    <p>La optimización en compiladores se refiere al proceso de mejorar el código generado para que sea más eficiente, ya sea en tiempo de ejecución, uso de memoria, o consumo de energía. Existen diversas técnicas de optimización que actúan en diferentes etapas y niveles del proceso de compilación, desde bloques individuales hasta el programa completo.
+<br><br>
+Estas optimizaciones permiten que los programas funcionen de manera más eficaz sin alterar su comportamiento. Son fundamentales para mejorar el rendimiento de software en dispositivos con recursos limitados o para lograr tiempos de respuesta más rápidos en aplicaciones críticas.
+<br><br>
+    </p>
+
+</div>
+           
+
+
+          <div class="contenedor-info">
+            <h3 class="titulos">3.1.1 Locales</h3>
+            <p>Las optimizaciones locales se aplican dentro de bloques básicos, es decir, segmentos de código que no tienen bifurcaciones internas. Estas técnicas buscan eliminar redundancias, instrucciones innecesarias y realizar sustituciones que mantengan la semántica original pero reduzcan el costo computacional.
+<br><br>
+Este tipo de optimización es rápida y efectiva porque se limita a un contexto pequeño y bien definido. Se utiliza comúnmente para realizar mejoras como la propagación de constantes, eliminación de código muerto, y simplificación algebraica.
+<br><br>
+            </p>
+
+          </div>  
+           
+
+
+          <div class="contenedor-info">
+
+            <h3 class="titulos">3.1.2 Ciclos</h3>
+            <p>La optimización de ciclos se enfoca en mejorar la eficiencia de los bucles, ya que representan secciones del código que se ejecutan repetidamente. Las técnicas aplicadas incluyen el desenrollado de bucles, la eliminación de código redundante dentro del ciclo, y la reordenación de instrucciones para maximizar el paralelismo.
+<br><br>
+Dado que los ciclos pueden representar una porción significativa del tiempo de ejecución, optimizarlos puede tener un impacto muy positivo en el rendimiento global. Estas mejoras deben realizarse cuidadosamente para mantener la lógica y la salida esperada del programa.
+<br><br>
+            </p>
+          </div>
+
+<div class="contenedor-info">
+
+    <h3 class="titulos">3.1.3 Globales</h3>
+    <p>Las optimizaciones globales abarcan todo el programa o grandes secciones del mismo, permitiendo detectar patrones y redundancias más allá de los bloques individuales. Incluyen técnicas como análisis de flujo de datos, propagación de copia global y eliminación de subexpresiones comunes.
+<br><br>
+Estas optimizaciones requieren mayor análisis y recursos computacionales, pero pueden generar mejoras significativas en el rendimiento del programa final. Son fundamentales para asegurar la eficiencia cuando los programas escalan en tamaño y complejidad.
+<br><br>
+    </p>
+</div>
+
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">3.1.4 De mirilla</h3>
+            <p>La optimización de mirilla se basa en examinar pequeñas ventanas (o “mirillas”) de instrucciones para detectar patrones que puedan ser reemplazados por secuencias más eficientes. Se trata de una técnica de sustitución de patrones que busca ahorrar tiempo o espacio mediante transformaciones locales.
+<br><br>
+Es una de las formas más simples de optimización, pero muy efectiva en ciertas situaciones. Se utiliza comúnmente en las etapas finales del proceso de compilación, justo antes de generar el código objeto.
+<br><br>
+            </p>
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">3.2 Costos</h3>
+            <p>Los costos en el contexto de la optimización del compilador se refieren a los recursos que un programa utiliza durante su ejecución. Estos pueden incluir tiempo de CPU, uso de memoria, número de accesos a registros o uso de la pila. Evaluar estos costos permite al compilador tomar decisiones informadas sobre qué transformaciones aplicar.
+<br><br>
+El objetivo de la optimización es reducir estos costos sin alterar el comportamiento funcional del programa. Para lograrlo, los compiladores deben contar con modelos precisos del rendimiento de instrucciones y recursos del sistema de destino.
+<br><br>
+            </p>
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">3.2.1 Costo de ejecución (memoria, registros, pilas)</h3>
+            <p>El costo de ejecución de un programa se evalúa en función del consumo de recursos como la memoria, los registros del procesador y el uso de la pila. Estos elementos son críticos para el desempeño y determinan cuán bien se adapta el código a la arquitectura de destino.
+<br><br>
+Una buena estrategia de optimización minimiza el uso de memoria innecesaria, maximiza el aprovechamiento de registros y controla adecuadamente el crecimiento de la pila. El manejo eficiente de estos recursos contribuye directamente a la velocidad y estabilidad del programa.
+<br><br>
+            </p>
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">3.2.2 Criterios para mejorar el código</h3>
+            <p>Los criterios para mejorar el código incluyen la reducción del número de instrucciones, la reutilización de resultados intermedios, la simplificación de expresiones y la reorganización del flujo de control. Estas prácticas buscan aumentar la eficiencia sin cambiar el resultado final del programa.
+<br><br>
+Además, se consideran aspectos como la legibilidad del código generado, la facilidad de depuración y la adaptabilidad a distintas plataformas. Un código más limpio y modular también tiende a ser más optimizable por compiladores posteriores.
+<br><br>
+            </p>
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">3.2.3 Herramientas para el análisis del flujo de datos</h3>
+            <p>Las herramientas de análisis de flujo de datos permiten identificar cómo se mueven los datos dentro de un programa. Este análisis ayuda a determinar qué valores son utilizados, modificados o innecesarios en distintas etapas del código, lo cual es crucial para aplicar optimizaciones efectivas.
+<br><br>
+Estas herramientas trabajan con representaciones intermedias del código y utilizan grafos de flujo de control para seguir el rastro de las variables. Son indispensables en la aplicación de técnicas como la eliminación de código muerto, propagación de constantes y análisis de disponibilidad de expresiones.
+<br><br>
+            </p>
+</div>
+
+
+  
+            
+        </div>
+        <div>
+            
+            
+            <img src="./img/2010s2.png" alt="">
+            <img src="./img/2010s (2).png" alt="">
+          
+        </div>
+    </section>
+</body>
+
+</html>

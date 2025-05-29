@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70s</title>
+    <link rel="stylesheet" href="./css/decadas.css">
+    <link rel="stylesheet" href="./css/mediaquerys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+
+        
+<div id="logo">
+    <img src="./img/logo pagina automatas.png" alt="">
+   
+  
+</div>
+            
+        <div id="title">
+            <h2>TuringFlow</h2>
+        </div>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html" class="activado">Inicio</a></li>
+                <li><a href="historia.html">Linea del tiempo</a></li>
+                
+                <li><a href="./conceptos.html">Conceptos</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <div>
+            <button id="btnLogin" onclick="window.location.href='./90s.html'">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Siguiente
+            </button>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+    <!--Seccion Principal-->
+
+    <section id="main">
+        <div>
+            
+            <h2>Análisis semántico. </h2>
+
+<div class="contenedor-info">
+
+    <h3 class="titulos">1.1 Árboles de expresiones.</h3>
+    <p>Los árboles de expresiones son estructuras de datos 
+        fundamentales en los compiladores, utilizados para 
+        representar expresiones matemáticas, lógicas o simbólicas 
+        en una forma estructurada y jerárquica. Cada nodo interno
+         del árbol representa un operador, mientras que los nodos 
+         hoja representan operandos (variables, constantes o literales). 
+         Esta estructura facilita la comprensión del orden de evaluación 
+         de las expresiones, dado que refleja claramente la precedencia y asociatividad de los operadores. <br> <br>
+    Durante el análisis sintáctico,
+ el árbol de expresión es generado como una forma intermedia de representación 
+ del código fuente. Esta representación no solo es útil para verificar la sintaxis
+  de las expresiones, sino que también proporciona una base para la ejecución de 
+  acciones semánticas, como la verificación de tipos, optimizaciones algebraicas 
+  o la generación de código intermedio. A diferencia de una simple cadena lineal,
+   el árbol conserva la estructura lógica de la expresión, lo cual es esencial para 
+   que el compilador comprenda el significado del código. <br> <br>
+    Además, los árboles de expresiones permiten realizar transformaciones sofisticadas 
+    como la optimización del código a través de técnicas como la evaluación constante, 
+    la eliminación de subexpresiones comunes, y la reordenación de operaciones. Estas transformaciones se
+     hacen más complejas si el código se representa en una forma lineal. Por esta razón, los árboles de expresión
+      son frecuentemente utilizados en etapas posteriores del compilador como la generación de código intermedio o 
+      la traducción a código máquina.
+
+
+    </p>
+
+</div>
+           
+
+
+          <div class="contenedor-info">
+            <h3 class="titulos">1.2 Acciones Semánticas de un Analizador Sintáctico</h3>
+            <p>Las acciones semánticas son fragmentos de código que se ejecutan cuando una producción específica de una gramática es reconocida durante el análisis sintáctico. Estas acciones permiten conectar la sintaxis con la semántica, ya que a medida que se construye el árbol de derivación sintáctico, también se pueden realizar operaciones para verificar o construir estructuras semánticas. Por lo general, están insertadas dentro de la gramática como parte de las reglas de producción, usando mecanismos como los atributos sintéticos y heredados.
+<br><br>
+
+Las acciones semánticas cumplen funciones variadas: desde la construcción del árbol de sintaxis abstracta (AST), hasta la verificación de tipos, la creación de entradas en la tabla de símbolos y la emisión de código intermedio. También permiten implementar restricciones semánticas del lenguaje que no pueden expresarse solo con reglas sintácticas, como por ejemplo la verificación de que una variable ha sido declarada antes de ser utilizada o que los parámetros de una función coincidan con su definición.
+<br><br>
+
+Además, las acciones semánticas pueden interactuar con estructuras auxiliares como la pila semántica o las tablas de símbolos. Esto implica que el diseño del analizador sintáctico debe permitir la ejecución de código adicional en puntos estratégicos del proceso de análisis. Las acciones semánticas son vitales para garantizar que el código fuente no solo tenga una forma válida, sino que también tenga sentido desde el punto de vista de las reglas del lenguaje.
+<br><br>
+            </p>
+
+          </div>  
+           
+
+
+          <div class="contenedor-info">
+
+            <h3 class="titulos">1.3 Comprobaciones de tipos en expresiones</h3>
+            <p>La comprobación de tipos es una técnica semántica que garantiza que las operaciones en un programa se realicen entre operandos compatibles. Esta verificación previene errores como intentar multiplicar una cadena con un entero o acceder a un objeto como si fuera un arreglo. Se basa en las reglas de tipado del lenguaje fuente, que definen qué combinaciones de tipos son válidas para cada operador y estructura. Existen dos grandes enfoques: comprobación estática, que se realiza en tiempo de compilación, y comprobación dinámica, que se realiza durante la ejecución.
+<br><br>
+
+Durante el análisis semántico, el compilador recorre las expresiones y evalúa los tipos de los operandos en cada operación. Si los tipos no son compatibles, se genera un error semántico. Algunos lenguajes permiten la coerción o conversión automática de tipos, en cuyo caso el compilador debe insertar instrucciones para realizar estas conversiones en tiempo de ejecución. La comprobación de tipos también abarca expresiones más complejas, como llamadas a funciones, acceso a miembros de estructuras u operadores sobrecargados.
+<br><br>
+
+La correcta implementación del sistema de tipos es crucial para la seguridad y robustez del lenguaje. Un sistema de tipos bien definido previene muchos errores comunes en tiempo de ejecución, y facilita la optimización del código generado. Además, permite que herramientas como los entornos de desarrollo (IDE) proporcionen características avanzadas como la inferencia de tipos, refactorización segura y análisis estático. Por ello, la comprobación de tipos es una de las tareas más relevantes del análisis semántico en compiladores modernos.
+<br><br>
+
+
+            </p>
+          </div>
+
+<div class="contenedor-info">
+
+    <h3 class="titulos">1.4 Pila Semántica en un Analizador Sintáctico</h3>
+    <p>La pila semántica es una estructura de datos usada por los analizadores sintácticos para gestionar y almacenar atributos semánticos asociados a los símbolos de una gramática. A medida que el analizador procesa el código fuente, los atributos se colocan en la pila para luego ser utilizados por acciones semánticas. Esta pila actúa como un contenedor de información de contexto, permitiendo acceder y combinar los valores de atributos necesarios para construir estructuras semánticas complejas.
+<br><br>
+
+En analizadores tipo LR (bottom-up), la pila semántica se sincroniza con la pila de análisis. Por cada símbolo desplazado (shift), se introduce el atributo correspondiente en la pila semántica. Durante una reducción, se recuperan los atributos de los símbolos de la producción y se aplican las acciones semánticas correspondientes, generando un nuevo atributo que se vuelve a insertar en la pila. Este mecanismo asegura una correspondencia directa entre la estructura sintáctica reconocida y su representación semántica.
+<br><br>
+
+El uso de una pila semántica también permite modularizar el proceso de análisis semántico, facilitando su implementación y depuración. Permite gestionar adecuadamente la semántica contextual, como la resolución de ámbitos, el paso de parámetros, y la evaluación parcial de expresiones. En síntesis, la pila semántica es un componente esencial en la arquitectura de compiladores, ya que intermedia entre la fase sintáctica y la semántica para mantener la coherencia del proceso de traducción.
+<br><br>
+    </p>
+</div>
+
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">1.5 Esquema de Traducción</h3>
+            <p>Un esquema de traducción es una gramática enriquecida con acciones semánticas insertadas entre las reglas de producción. Se usa para especificar cómo se deben realizar las traducciones a medida que se reconoce la sintaxis del programa. En lugar de esperar hasta que el árbol de sintaxis completo esté construido, estas acciones permiten realizar traducciones parciales durante el reconocimiento de cada producción, lo cual hace más eficiente y estructurado el proceso de compilación.
+<br><br>
+Estas acciones semánticas están escritas en un lenguaje de programación o pseudocódigo incrustado dentro de las producciones. Su objetivo puede ser diverso: generar código intermedio, verificar tipos, modificar estructuras internas como la tabla de símbolos, o incluso construir representaciones intermedias como árboles abstractos. A menudo, los esquemas de traducción forman parte de gramáticas dirigidas por atributos, donde cada símbolo tiene atributos que transportan información semántica entre producciones.
+<br><br>
+En compiladores reales, los esquemas de traducción se implementan directamente en analizadores sintáctico-semánticos. Por ejemplo, al reconocer una asignación, se puede ejecutar una acción que genere una instrucción en código intermedio tipo "MOV". La ventaja de este enfoque es que permite un fuerte acoplamiento entre la sintaxis y la semántica, facilitando la detección temprana de errores y la producción simultánea del resultado semántico del programa fuente.
+<br><br>
+
+
+            </p>
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">1.6 Generación de la Tabla de Símbolos y Tabla de Direcciones</h3>
+    <p>La tabla de símbolos es una estructura fundamental que mantiene un registro de todos los identificadores que aparecen en un programa fuente, como variables, constantes, funciones, clases y estructuras. Cada entrada en esta tabla contiene información relevante sobre el identificador, como su tipo de dato, ámbito (scope), dirección en memoria (offset), visibilidad, y atributos adicionales según el lenguaje (como si es constante, pública, estática, etc.). Esta tabla es consultada durante todo el proceso de compilación.
+<br><br>
+Durante el análisis léxico y sintáctico, los nuevos identificadores se insertan en la tabla de símbolos a medida que son reconocidos. Luego, en el análisis semántico, se utilizan para verificar que los identificadores estén bien declarados, no se repitan en el mismo ámbito, y se usen correctamente según su tipo. En lenguajes con anidamiento de bloques o funciones, es común utilizar una pila de tablas o una estructura jerárquica para representar distintos niveles de alcance (scopes), de modo que se respete el contexto léxico del lenguaje.
+<br><br>
+Paralelamente, la tabla de direcciones guarda información sobre la ubicación física o lógica de los identificadores en la memoria. Esta tabla es esencial para la generación de código intermedio o código objeto, ya que permite asignar correctamente espacios de almacenamiento a las variables y parámetros. En lenguajes con administración de memoria dinámica, también puede incluir información sobre regiones de heap, stack y segmentos de código. El uso conjunto de ambas tablas permite un control preciso del contexto y los recursos del programa, asegurando tanto la corrección como la eficiencia en tiempo de ejecución.
+<br><br>
+    </p>
+
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">1.7 Manejo de Errores Semánticos</h3>
+            <p>El manejo de errores semánticos es una etapa crítica del proceso de compilación, encargada de detectar y gestionar aquellas inconsistencias que no pueden ser identificadas por el análisis léxico ni sintáctico. Estos errores incluyen, entre otros, el uso de variables no declaradas, el paso incorrecto de tipos a funciones, la asignación de tipos incompatibles y el acceso indebido a atributos privados o fuera de ámbito. El objetivo es asegurar que el código fuente tenga sentido lógico y sea ejecutable sin violar las reglas semánticas del lenguaje.
+<br><br>
+Cuando se detecta un error semántico, el compilador debe informar al programador de forma clara y precisa, indicando la naturaleza del error, la ubicación y posibles sugerencias para corregirlo. Sin embargo, además de reportar el error, el compilador debe intentar continuar el análisis para no detenerse en el primer problema, permitiendo así encontrar múltiples errores en una sola pasada. Esto se conoce como recuperación de errores, y puede implicar técnicas como la inserción de tokens faltantes, la omisión de símbolos incorrectos o la sincronización con puntos seguros del análisis.
+<br><br>
+Un diseño robusto del manejador de errores semánticos también contribuye a la seguridad del lenguaje y a una mejor experiencia de desarrollo. En muchos compiladores modernos, los errores semánticos se integran con herramientas de desarrollo (como IDEs) para resaltar problemas en tiempo real, ofrecer correcciones automáticas y evitar errores en tiempo de ejecución. La precisión del sistema de tipos, la claridad de las reglas de ámbito y la calidad del reporte de errores determinan en gran parte la utilidad práctica del compilador desde la perspectiva del programador.
+<br><br>
+            </p>
+
+</div>
+           
+            
+          
+     
+            
+            
+        </div>
+        <div>
+            <img src="./img/unix.png" alt="">
+            <img src="./img/70s.png" alt="">
+
+          
+        </div>
+    </section>
+</body>
+
+</html>

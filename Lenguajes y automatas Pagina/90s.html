@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 2</title>
+    <link rel="stylesheet" href="./css/90.css">
+    <link rel="stylesheet" href="./css/mediaquerys.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <header>
+
+
+        
+<div id="logo">
+    <img src="./img/logo pagina automatas.png" alt="">
+   
+  
+</div>
+            
+        <div id="title">
+            <h2>TuringFlow</h2>
+        </div>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html" class="activado">Inicio</a></li>
+                <li><a href="historia.html">Linea del tiempo </a></li>
+                
+                <li><a href="./conceptos.html">Conceptos</a></li>
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </a>
+                </li>
+
+
+            </ul>
+        </nav>
+        <div>
+            <button id="btnLogin" onclick="window.location.href='./2010s.html'">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Siguiente
+            </button>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </header>
+
+    <!--Seccion Principal-->
+
+    <section id="main">
+        <div>
+            
+            <h2>Generación de código intermedio. </h2>
+
+<div class="contenedor-info">
+
+    <h3 class="titulos">2.1 Notaciones</h3>
+    <p>
+Las notaciones en expresiones aritméticas y lógicas definen el orden en que se escriben los operandos y operadores. Las tres formas principales son prefija, infija y postfija, y cada una tiene un impacto diferente en la forma en que se evalúan y procesan las expresiones. La elección de notación afecta la facilidad para analizar, interpretar y traducir expresiones en compiladores.
+<br><br>
+Estas notaciones permiten también una mejor comprensión de las expresiones y facilitan la conversión entre ellas, lo que es esencial en la generación de código intermedio y en la optimización. Los compiladores suelen transformar expresiones infijas, que son las más comunes para los programadores, en notaciones postfijas o prefijas para su evaluación y generación de código.
+<br><br>
+    </p>
+
+</div>
+           
+
+
+          <div class="contenedor-info">
+            <h3 class="titulos">2.1.1 Prefija</h3>
+            <p>La notación prefija, también conocida como notación polaca, es una forma en la que el operador precede a sus operandos. En esta notación no se requieren paréntesis para definir la prioridad, ya que la posición del operador determina el orden de evaluación. Esto simplifica el análisis de expresiones en entornos computacionales.
+<br><br>
+Esta notación es especialmente útil en compiladores y calculadoras, ya que se puede evaluar fácilmente utilizando pilas y reglas simples sin necesidad de analizar prioridades adicionales. La notación prefija es utilizada principalmente en ciertas formas de representación interna de expresiones en compiladores.
+<br><br>
+
+
+            </p>
+
+          </div>  
+           
+
+
+          <div class="contenedor-info">
+
+            <h3 class="titulos">2.1.2 Infija</h3>
+            <p>La notación infija es la forma convencional que utilizan los humanos para escribir expresiones, donde los operadores se encuentran entre los operandos. En esta notación, el orden de evaluación depende de la precedencia de operadores y de los paréntesis para modificar dicha precedencia.
+<br><br>
+Aunque es intuitiva para las personas, la notación infija es más compleja para que las computadoras la procesen directamente, ya que requiere análisis sintáctico detallado para determinar la prioridad y asociación de operadores. Por ello, los compiladores convierten esta notación a formas más manejables como la postfija o prefija para su procesamiento interno.
+<br><br>
+            </p>
+          </div>
+
+<div class="contenedor-info">
+
+    <h3 class="titulos">2.1.3 Postfija</h3>
+    <p>Durante los 90, Apple continuó con sus versiones del sistema operativo clásico basado en System 7, que fue mejorando su estabilidad y capacidades gráficas
+    </p>en esa década Apple enfrentó dificultades hasta la adquisición de NeXT (la compañía fundada por Steve Jobs) en 1996, lo que finalmente llevó al desarrollo de Mac OS X, lanzado en el 2000.
+</div>
+
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.2 Representaciones de Código Intermedio</h3>
+            <p>El código intermedio es una representación abstracta del programa fuente, que se sitúa entre el código fuente y el código máquina. Esta capa facilita la optimización y la portabilidad del compilador, permitiendo que la generación de código final se adapte a diferentes arquitecturas. Existen diversas formas de representar este código, cada una con ventajas específicas para análisis y optimización.
+<br><br>
+Las representaciones comunes incluyen notación polaca, código P, triplos y cuádruplos. Estas estructuras permiten expresar operaciones complejas de manera sencilla y estructurada, facilitando la transformación, optimización y generación final de instrucciones ejecutables. La elección de representación depende de los objetivos específicos y la arquitectura del compilador.
+<br><br>
+            </p>
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.2.1 Notación Polaca</h3>
+    <p>La notación polaca para código intermedio es una representación en forma de secuencia lineal donde el operador aparece antes de sus operandos. Esta forma permite una evaluación eficiente y directa, y es útil en compiladores para representar instrucciones y expresiones.
+<br><br>
+Esta notación sirve para simplificar la generación y ejecución de código, evitando problemas de precedencia y facilitando la manipulación algorítmica en el proceso de compilación y optimización. Su estructura es sencilla y se adapta bien a la evaluación mediante pilas.
+<br><br>
+    </p>
+
+</div>
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.2.2 Código P</h3>
+    <p>El código P es una forma de código intermedio que utiliza instrucciones de pila para representar operaciones. En este sistema, las operaciones se traducen a secuencias de instrucciones que manipulan una pila virtual, lo cual simplifica la generación y ejecución del código.
+<br><br>
+Este tipo de código intermedio es muy adecuado para arquitecturas de máquina stack-based y es utilizado en máquinas virtuales como la JVM. Permite un análisis claro y facilita la traducción a código máquina o ensamblador.
+<br><br>
+    </p>
+
+</div>
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.2.3 Triplos</h3>
+    <p>Los triplos son una representación de código intermedio donde cada instrucción consta de tres campos: operador, operando1 y operando2. No incluyen un campo explícito para el resultado, sino que la posición del triplo en la secuencia sirve para referenciar su valor.
+<br><br>
+Esta estructura es compacta y permite una referencia directa a resultados anteriores, facilitando la optimización local y la generación de código final. Los triplos son ampliamente usados en compiladores para mantener claridad y eficiencia en la representación de instrucciones.
+<br><br>
+    </p>
+
+</div>
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.2.4 Cuádruplos</h3>
+    <p>Los cuádruplos son similares a los triplos pero añaden un cuarto campo para almacenar explícitamente el resultado de la operación. Este formato permite un acceso más directo y claro a los valores intermedios durante la generación y optimización del código.
+<br><br>
+El uso de cuádruplos facilita la gestión de variables temporales y la manipulación de instrucciones complejas, mejorando la modularidad y legibilidad del código intermedio. Es una representación muy utilizada en compiladores modernos.
+<br><br>
+    </p>
+
+</div>
+
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3 Esquema de Generación</h3>
+    <p>El esquema de generación describe el proceso mediante el cual un compilador produce código intermedio o final a partir de una representación semántica del programa fuente. Este esquema involucra la asignación de memoria, la gestión de variables, y la traducción de expresiones e instrucciones de control.
+<br><br>
+Este proceso es fundamental para que el compilador produzca código eficiente y correcto, respetando las reglas del lenguaje y las características de la arquitectura objetivo. La generación se realiza normalmente de manera incremental a medida que se analizan las estructuras del programa.
+<br><br>
+    </p>
+
+</div>
+
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3.1 Variables y Constantes</h3>
+    <p>La generación de código para variables y constantes implica asignar espacios de memoria y establecer valores iniciales. Las variables deben tener una dirección asociada para su manipulación en tiempo de ejecución, mientras que las constantes pueden ser embebidas directamente en el código.
+<br><br>
+El manejo correcto de estos elementos garantiza que el programa utilice recursos adecuadamente y que las operaciones sobre datos sean precisas. El esquema debe contemplar ámbitos, duración y tipo de almacenamiento.
+<br><br>
+    </p>
+
+</div>
+
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3.2 Expresiones</h3>
+    <p>La generación de código para expresiones traduce operaciones aritméticas y lógicas en instrucciones de bajo nivel o código intermedio. Este proceso debe respetar la precedencia y el orden de evaluación, además de gestionar temporales cuando sea necesario.
+<br><br>
+La correcta traducción de expresiones es clave para asegurar que el programa funcione correctamente y que se puedan realizar optimizaciones posteriores. El compilador debe transformar las expresiones en secuencias de instrucciones que la máquina pueda ejecutar.
+<br><br>
+    </p>
+
+</div>
+
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3.3 Instrucción de Asignación</h3>
+    <p>La instrucción de asignación implica generar código que tome el valor de una expresión y lo almacene en una variable destino. Este paso debe manejar correctamente las direcciones de memoria y los tipos de datos involucrados.
+<br><br>
+El esquema de generación debe garantizar que la asignación preserve la semántica del programa, realizando conversiones o verificaciones necesarias para evitar errores en tiempo de ejecución. La eficiencia también es un aspecto importante.
+<br><br>
+    </p>
+
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3.4 Instrucciones de Control</h3>
+    <p>Las instrucciones de control, como condicionales y bucles, requieren la generación de saltos condicionales e incondicionales para manejar el flujo del programa. Estas instrucciones son fundamentales para implementar la lógica de decisión y repetición.
+<br><br>
+El compilador debe traducir estas instrucciones en estructuras de control a nivel de código máquina o intermedio, asegurando la correcta evaluación de condiciones y la ejecución secuencial o ramificada según corresponda.
+<br><br>
+    </p>
+
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3.5 Funciones</h3>
+    <p>La generación de código para funciones abarca la gestión de llamadas, el paso de parámetros, la reserva y liberación de espacio en pila, y la gestión del valor de retorno. Este proceso es crítico para la modularidad y reutilización del código.
+<br><br>
+El esquema de generación debe asegurar que las funciones se ejecuten correctamente respetando los protocolos de llamada y retorno, además de manejar adecuadamente el ámbito de variables locales y globales.
+<br><br>
+    </p>
+
+</div>
+
+<div class="contenedor-info">
+    <h3 class="titulos">2.3.6 Estructuras</h3>
+    <p>Las estructuras, como registros o clases, requieren un manejo especial en la generación de código para administrar sus campos y métodos asociados. La correcta gestión de estas estructuras es vital para el soporte de programación orientada a objetos y tipos compuestos.
+<br><br>
+El compilador debe generar código que permita acceder y modificar los campos, además de invocar métodos, respetando el encapsulamiento y el manejo de memoria asociado a cada instancia.
+<br><br>
+    </p>
+
+</div>
+
+
+            
+        </div>
+        <div>
+            <img src="./img/navegador.png" alt="">
+            <img src="./img/90s.png" alt="">
+             <img src="./img/imagen unidad 2.png" alt="">
+             <img src="./img/imagen unidad 22.png" alt="">
+            
+
+          
+        </div>
+    </section>
+</body>
+
+</html>
